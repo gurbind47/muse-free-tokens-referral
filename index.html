@@ -325,6 +325,32 @@
     }
 
     .note { font-size: .85rem; color: var(--muted); text-align: center; margin-top: 1rem; }
+
+    /* Download buttons */
+    .downloads {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .dl-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      text-decoration: none;
+      background: var(--text);
+      color: var(--bg);
+      border-radius: 12px;
+      padding: .8rem 1.2rem;
+      font-weight: 700;
+      font-size: .95rem;
+      transition: transform .1s ease, opacity .15s ease;
+    }
+    .dl-btn:hover { opacity: .88; }
+    .dl-btn:active { transform: translateY(1px); }
+    .dl-btn .ico { font-size: 1.3rem; line-height: 1; }
+    .dl-btn small { display: block; font-weight: 500; font-size: .72rem; opacity: .75; }
   </style>
 </head>
 <body>
@@ -349,6 +375,18 @@
       <h2>What is Muse?</h2>
       <p>Muse is an AI-powered assistant app that lets you chat with advanced models, generate content, draft messages, brainstorm ideas, and automate everyday work — all powered by tokens. Tokens are the credits Muse uses to run its AI, so the more tokens you have, the more you can create, ask, and build without paying out of pocket.</p>
       <p>This is why the <strong>VRIM67 referral</strong> is so valuable: <strong>1 Billion free tokens</strong> is enough to run heavy AI tasks for a long time — completely free. New users get it at sign-up, and if you already installed Muse you can still apply it as a promo code in Settings.</p>
+
+      <div class="downloads" aria-label="Download Muse">
+        <a class="dl-btn" href="https://apps.apple.com/us/app/muse-from-meta/id6760173601" target="_blank" rel="noopener">
+          <span class="ico">&#127821;</span><span>iPhone / iPad<small>App Store</small></span>
+        </a>
+        <a class="dl-btn" href="https://play.google.com/store/apps/details?id=com.facebook.aura" target="_blank" rel="noopener">
+          <span class="ico">&#129302;</span><span>Android<small>Google Play</small></span>
+        </a>
+        <a class="dl-btn" href="https://ai.meta.com/muse/download/" target="_blank" rel="noopener">
+          <span class="ico">&#128187;</span><span>Mac / Desktop<small>Download</small></span>
+        </a>
+      </div>
     </section>
 
     <!-- BENEFITS -->
